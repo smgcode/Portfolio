@@ -1,31 +1,52 @@
-<h1>Sean Gee</h1>
-<p><strong>About me:</strong> 
-  I studied Electircal Enginering, 
-  worked as a 
-  <%= link_to("Software Developer", "http://www.linkedin.com/in/seangee") %> 
-  <!-- insert linkedin icon -->
-  making simulations, 
-  and now I'm hacking my way into the web 
-  <%= link_to("Tasty Bit", "http://tastespottingclone.herokuapp.com/") %>. 
-  <!-- insert new icon -->
-  You can find me solving problems with code 
-  <%= link_to("Git Hub", "https://github.com/smgcode") %>, 
-  <!-- insert Github icon -->
-  climbing walls in Yosemite, 
-  or shooting photos of the sunset 
-  <%= link_to("Blogspot", "http://fifthtone.blogspot.com/") %>.
-  <!-- insert Blogspot icon -->
-</p>
-<p>
-  Write me:
-  <%= link_to("SeanGee@gmail.com", "mailto:SeanGee@gmail.com") %>
-  <!-- insert email icon -->
-</p>
-<p>
-  Projects to include:
-  <ul>
-    <li>Active Record</li>
-    <li>Rails Lite</li>
-    <li>Asteroids</li>
-  </ul>
-</p>
+<div class="container">
+  <h1>Sean Gee</h1>
+    <div class="four columns sidebar">
+    <p>
+      <strong>About me:</strong> 
+      I studied Electircal Enginering, 
+      worked as a Software Engineer
+      <a href="http://www.linkedin.com/in/seangee">
+        <i class="icon-linkedin-sign"></i>
+      </a>
+      making simulations, 
+      and now I'm hacking my way into the web.
+      You can find me solving problems with code 
+      <a href="https://github.com/smgcode">
+        <i class="icon-github-sign"></i>
+      </a>
+      climbing walls in Yosemite
+      <a href="https://plus.google.com/photos/117641334969338011935/
+              albums/5744076741800911409">
+        <i class="icon-google-plus-sign"></i>
+      </a>
+      or shooting photos of the sunset
+      <a href="http://fifthtone.blogspot.com/">
+        <i class="icon-camera-retro"></i>
+      </a>
+    </p>
+    <strong>Projects:</strong>
+    <ul>
+    <!-- TODO Add links/github icons,
+              descriptions of projects and technologies used -->
+      <li>
+        <%= link_to("Tasty Bit", 
+                    "http://tastespottingclone.herokuapp.com/") %>
+      </li>
+      <li>Asteroids</li>
+      <li>Active Record Lite</li>
+      <li>Rails Lite</li>
+      <!-- TODO Add Rails project -->
+      <!-- TODO Add Backbone project -->
+    </ul>
+    Write me:
+    <%= link_to("SeanGee@gmail.com", "mailto:SeanGee@gmail.com") %>
+    <!-- TODO insert email icon -->
+  </div>
+  <div class="eight columns content">
+    <% 100.times do %>
+    put content here. 
+    <% end %>
+  </div>
+
+
+</div>
